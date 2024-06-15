@@ -30,7 +30,7 @@ We recommend using [conda](https://docs.conda.io/en/latest/) to install QupKake.
 Clone the repository:
 ```bash
 git clone https://github.com/Shualdon/QupKake.git
-cd qupkake
+cd QupKake
 ```
 
 Create a conda environment from the environment.yml file:
@@ -56,7 +56,7 @@ conda activate qupkake
 Clone the repository and install using pip:
 ```bash
 git clone https://github.com/Shualdon/QupKake.git
-cd qupkake
+cd QupKake
 pip install .
 ```
 This will install the package and all the rest of the dependencies.
