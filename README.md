@@ -108,9 +108,9 @@ $ qupkake file <filename>
 
 Specific flags for this input type are:
 ```bash
--s, --smiles_col: column name for SMILES strings. Default: smiles
+-s, --smiles-col: column name for SMILES strings. Default: smiles
 
--n, --name_col: column name for molecule names. Default: name
+-n, --name-col: column name for molecule names. Default: name
 
 -o, --output: output file name (SDF with pKa predictions). Default: qupkake_output.sdf
 ```
