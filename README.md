@@ -33,9 +33,9 @@ git clone https://github.com/Shualdon/QupKake.git
 cd QupKake
 ```
 
-Create a conda environment from the environment.yml file:
+Create a conda environment from the environment.yaml file:
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yaml
 conda activate qupkake
 ```
 This will create a conda environment with all the dependencies installed.
