@@ -30,12 +30,12 @@ We recommend using [conda](https://docs.conda.io/en/latest/) to install QupKake.
 Clone the repository:
 ```bash
 git clone https://github.com/Shualdon/QupKake.git
-cd qupkake
+cd QupKake
 ```
 
-Create a conda environment from the environment.yml file:
+Create a conda environment from the environment.yaml file:
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yaml
 conda activate qupkake
 ```
 This will create a conda environment with all the dependencies installed.
@@ -56,7 +56,7 @@ conda activate qupkake
 Clone the repository and install using pip:
 ```bash
 git clone https://github.com/Shualdon/QupKake.git
-cd qupkake
+cd QupKake
 pip install .
 ```
 This will install the package and all the rest of the dependencies.
@@ -108,9 +108,9 @@ $ qupkake file <filename>
 
 Specific flags for this input type are:
 ```bash
--s, --smiles_col: column name for SMILES strings. Default: smiles
+-s, --smiles-col: column name for SMILES strings. Default: smiles
 
--n, --name_col: column name for molecule names. Default: name
+-n, --name-col: column name for molecule names. Default: name
 
 -o, --output: output file name (SDF with pKa predictions). Default: qupkake_output.sdf
 ```
