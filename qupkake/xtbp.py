@@ -271,12 +271,21 @@ class XTBP:
                 line.split()[3].split(".")[-1].lower()
             )
 
-        if "number of atoms" in line.strip():
-            self.attributes["natom"] = int(line.split()[4])
+        if "ID    Z sym.   atoms" in line.strip():
+            line = next(inputfile).strip()
+            atom_numbers = []
+            while line != "":
+                line = line.split(maxsplit=3)[-1]
+                if "-" in line:
+                    line = line.replace("-", ", ")
+                atom_numbers.append(int(line.split(", ")[-1]))
+                line = next(inputfile).strip()
+
+            self.attributes["natom"] = max(atom_numbers)
 
         # Grab total charge
-        if "charge" == line.strip()[:6]:
-            charge = int(line.split()[2])
+        if "net charge" in line.strip():
+            charge = int(line.split()[3])
             self.attributes["charge"] = charge
 
         # Multiplicity = Spin + 1
